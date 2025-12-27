@@ -1,0 +1,23 @@
+{
+  "name": "khaliport",
+  "version": "1.0.0",
+  "description": "Find a free port to use, works on all platforms",
+  "license": "MIT",
+  "author": "supersuryaansh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx prettier . --write"
+  },
+  "dependencies": {
+    "dgram": "npm:bare-dgram@^1.0.1",
+    "net": "npm:bare-net@^2.2.0"
+  },
+  "bin": {
+    "khaliport": "./bin.mjs"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "prettier-config-holepunch": "^2.0.0"
+  }
+}
