@@ -1,6 +1,6 @@
 {
   "name": "khaliport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Find a free port to use, works on all platforms",
   "license": "MIT",
   "author": "supersuryaansh",
