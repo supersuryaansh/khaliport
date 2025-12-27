@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { freePort, freePortUDP } from './index.js'
 
 const port = await freePort()
