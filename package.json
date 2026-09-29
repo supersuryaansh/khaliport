@@ -5,19 +5,30 @@
   "license": "MIT",
   "author": "supersuryaansh",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "bin/"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "npx prettier . --write"
+    "test": "npm run check && node test.js",
+    "test-bare": "npm run check && bare test.js",
+    "check": "npx prettier . --check",
+    "format": "npx prettier . --write"
   },
   "dependencies": {
-    "dgram": "npm:bare-dgram@^1.0.1",
-    "net": "npm:bare-net@^2.2.0"
+    "dgram": "npm:bare-dgram@^1.1.1",
+    "net": "npm:bare-net@^2.3.3"
   },
   "bin": {
-    "khaliport": "./bin.mjs"
+    "khaliport": "./bin/khaliport.mjs"
   },
   "devDependencies": {
-    "prettier": "^3.7.4",
+    "brittle": "^4.2.0",
+    "prettier": "^3.9.9",
     "prettier-config-holepunch": "^2.0.0"
   }
 }
